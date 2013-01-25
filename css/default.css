@@ -1,7 +1,7 @@
 html, body {
 	height: 100%;
 	background-color: #efefef;
-	font-family: "Georgia", "Times New Roman", serif;  		
+	font-family: 'Georgia', 'Times New Roman', serif;  		
 }
 
 h1, h2, h3, h4, h5 {
@@ -76,8 +76,7 @@ dt, dd {
 	-webkit-transform: rotate(-6deg);
 	   -moz-transform: rotate(-6deg);
 	    -ms-transform: rotate(-6deg);
-	     -o-transform: rotate(-6deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	     -o-transform: rotate(-6deg);	
 }
 #languages p {
 	margin: 20px 80px;
@@ -91,6 +90,10 @@ dt, dd {
 
 #about-me {
 	margin-top: 80px;
+}
+#about-me img.face {
+	width: 64px;
+	/*height: 64px;*/	
 }
 
 .block {
