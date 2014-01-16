@@ -50,25 +50,41 @@
 /* Layout
  --------- */
 html, body {
+    height: 100%;
+}
+html * {
     margin: 0;
     padding: 0;
 }
 
-#site-head {
+header {
     width: 100%;
-    height: 600px;
+    height: 450px;
     position: relative;
     background: transparent url('../img/cover.jpeg') center center;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    z-index: -10;
 }
-#site-head-content {
-    padding-top: 120px;
+header .inner {
+    padding-top: 40px;
     padding-bottom: 100px;
 }
-
+header .blog-title {
+    height: 200px;
+    text-align: center;
+}
+header .blog-logo {
+    padding-top: 50px;
+}
+header .blog-description {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+}
 
 /* Typography
  ------------- */
@@ -76,20 +92,106 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Give You Glory', cursive;
 }
-h1.blog-title {
-    font-family: 'Reenie Beanie', cursive;
+
+.btn-outline {
     color: #fff;
-    font-size: 4em;
-    text-shadow: 2px 2px #333;
+    border-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 12px;
 }
-h1.blog-title small {
+
+.coffee {
+        font-size: 32px;
+        color: #1f1f1f;
+        text-align: center;
+        margin: 20px auto;
+}
+.coffee a, .coffee i, .coffee span {
+        display: inline-block;
+}
+.coffee i, .coffee span {
+        position: relative;
+        top: 10px;
+        margin: 0 20px;
+}
+.coffee .math {
+        font-weight: bold;
+}
+
+.signature {
+    font-family: 'Reenie Beanie', cursive;
+}
+
+
+.ribbon {
+    margin-left: -250px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    font-size: 25px!important; /* size of ribbon ends */
+    text-align: center;
+    background: #fff url('../img/ricepaper2.png') center center;
+    -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+       -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+            box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+}
+.ribbon h1 {
+    margin: 4px;
+    padding: 3px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 1px #80b1bc;
+    border: 1px dashed #bbb;
+}
+.ribbon small {
     border-bottom: 1px solid;
     position: relative;
     top: -0.3em;
 }
-.signature {
-    font-family: 'Reenie Beanie', cursive;
+.ribbon:before, .ribbon:after {
+    /* ribbon tails */
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1em;
+    border: 1.5em solid #f4f3f1;
+    z-index: -1;
 }
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+    -webkit-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+       -moz-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+            box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+}
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+    -webkit-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+       -moz-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+            box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    /* ribbon shadow */
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1em;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
 
 .poweredby .icon-ghost {
     font-weight: 700;
