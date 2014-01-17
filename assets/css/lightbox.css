@@ -49,6 +49,7 @@ body:after {
   width: 250px;
   height: 250px;
   margin: 0 auto;
+  margin-top: -40px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;

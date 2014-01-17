@@ -63,7 +63,7 @@ header .inner {
     padding-bottom: 100px;
 }
 header .blog-title {
-    height: 200px;
+    height: 100px;
     text-align: center;
 }
 header .blog-logo {
@@ -132,6 +132,13 @@ a:hover {
     color: #68237F;
 }
 
+header a {
+    color: #fff;
+}
+header a:hover {
+    color: #eee;
+}
+
 a.btn-outline {
     color: #fff;
     border-color: #fff;
@@ -142,9 +149,6 @@ a.btn-outline:hover {
     background-color: #fff;
 }
 
-header a {
-    color: #fff;
-}
 
 .features h1, .features h2, .features h3, .features h4, .features h5 {
     font-family: 'Roboto Condensed', sans-serif;
