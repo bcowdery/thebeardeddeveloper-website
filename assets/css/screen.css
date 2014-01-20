@@ -85,11 +85,10 @@ header .social-links {
     left: 5px;
 }
 
-.features {
-    padding-top: 50px;
+.main {
     background: transparent url('../img/gray_jean.png') top left repeat;
 }
-.projects {
+.container {
     padding-top: 50px;
 }
 
@@ -112,6 +111,18 @@ h1, h2, h3, h4, h5 {
     font-family: 'Reenie Beanie', cursive;
     margin-bottom: 1.2em;
     color: #fff;
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: #8106A9;
+}
+.main .fa {
+    color: #68237F;
+}
+.fa.fa-10x {
+    font-size: 10em;    
 }
 
 a {
@@ -160,67 +171,47 @@ a.btn-outline:hover {
     background-image: linear-gradient(to top, rgba(238, 238, 238, 1), rgba(255, 255, 255, 0));    
 }
 
-.coffee span {
-    margin: 0 10px;
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: #1f1f1f;
-}
-
-.features h1, .features h2, .features h3, .features h4, .features h5 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-    color: #8106A9;
-}
-.feature-icons {
-    
-    font-size: 10em;
-    color: #68237F;
-    text-shadow: rgba(0, 0, 0, 0.2) 0 10px 12px;
-}
-
 .ribbon {
-    margin-left: -250px;
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    font-size: 25px!important; /* size of ribbon ends */
-    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    position: relative;       
+    font-size: 30px; /* ribbon size */
     background: #fff url('../img/ricepaper2.png') center center;
     -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
        -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
-            box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+            box-shadow: rgba(000,000,000,0.3) 0 1px 1px;            
 }
-.ribbon h1 {
-    margin: 4px;
+.ribbon-content {
     padding: 3px;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+    text-align: center;
+}
+.ribbon-content h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;    
     font-weight: 700;
+    font-size: 48px;
     color: #333;
     text-shadow: 1px 1px 1px #80b1bc;
-    border: 1px dashed #bbb;
+    border: 1px dashed #ccc;
 }
-.ribbon small {
+.ribbon-content small {
     border-bottom: 1px solid;
     position: relative;
     top: -0.3em;
 }
+
+/* ribbon tails */
 .ribbon:before, .ribbon:after {
-    /* ribbon tails */
     content: '';
     display: block;
     position: absolute;
-    bottom: -1em;
-    border: 1.5em solid #f4f3f1;
+    bottom: -1em;        
+    border: 1em solid #f4f3f1;
     z-index: -1;
 }
 .ribbon:before {
-    left: -2em;
+    left: -1.5em;
     border-right-width: 1.5em;
     border-left-color: transparent;
     -webkit-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
@@ -228,15 +219,16 @@ a.btn-outline:hover {
             box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
 }
 .ribbon:after {
-    right: -2em;
+    right: -1.5em;
     border-left-width: 1.5em;
     border-right-color: transparent;
     -webkit-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
        -moz-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
             box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
 }
+
+/* ribbon shadow */
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-    /* ribbon shadow */
     content: '';
     display: block;
     position: absolute;

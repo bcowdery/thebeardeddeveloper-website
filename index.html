@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-        <header id="site-head">
+        <header role="banner">
             <div class="social-links">
                 <a href="http://github.com/bcowdery/"><i class="fa fa-github fa-2x"></i></a>
                 <a href="http://ca.linkedin.com/in/briancowdery/"><i class="fa fa-linkedin-square fa-2x"></i></a>
@@ -25,17 +25,13 @@
             <div class="inner">
                 <div class="blog-title">
                     <div class="ribbon">
-                        <strong class="ribbon-content"><h1>The Bearded Developer <small>co</small></h1></strong>
+                        <div class="ribbon-content"><h1>The Bearded Developer <small>co</small></h1></div>
                     </div>
                 </div>
 
                 <div class="blog-description">
-                    <p class="coffee text-center">
-                        <img src="assets/img/coffee_128.png" />
-                        <span class="math">+</span>
-                        <img src="assets/img/package_code_128.png" />
-                        <span class="math">=</span>
-                        <img src="assets/img/beardeddev_white_128.png" />
+                    <p class="text-center">
+                        <img src="assets/img/beard-math.png"/>
                     </p>
                     <p class="lead text-center">
                         Hi there! I'm Brian Cowdery, a Web Designer &amp; Developer.
@@ -47,7 +43,7 @@
             </div>
         </header>
 
-        <section id="features" class="features">
+        <div class="main">
             <div class="container">
 
                 <div class="row">
@@ -59,10 +55,10 @@
                         </p>
                     </div>
                     <div class="col-md-5 col-md-offset-1">
-                        <div class="feature-icons text-right">
-                            <i class="fa fa-desktop"></i>
-                            <i class="fa fa-tablet"></i>
-                            <i class="fa fa-mobile-phone"></i>
+                        <div class="text-right">
+                            <i class="fa fa-desktop fa-10x"></i>
+                            <i class="fa fa-tablet fa-10x"></i>
+                            <i class="fa fa-mobile-phone fa-10x"></i>
                         </div>
                     </div>
                 </div> <!-- end .row -->
@@ -77,7 +73,7 @@
                         <h2>Untangle your code</h2>
                         <p class="lead">
                             Got build problems? I specialize in version control systems and build automation. Continuous
-                            integration builds, one-click deployments and branching &amp; versioning strategies <strong>that work.</strong>
+                            integration builds, one-click deployments and branching strategies <strong>that work.</strong>
                         </p>
                     </div>
                 </div> <!-- end .row -->
@@ -112,65 +108,63 @@
                 </div>
 
             </div> <!-- end .container -->
-        </section> <!-- end section#features -->
+        </div> <!-- end .main -->
 
-        <section id="projects" class="projects">
-            <div class="container">
+        <div class="container">
 
-                <div class="row">
-                    <div clas="col-xs-12">
-                        <h1>Projects</h1>
+            <div class="row">
+                <div clas="col-xs-12">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <a href="assets/media/serenemama-1.png" data-lightbox="projects" title="SereneMama.com Birth Doulas">
+                                <img src="assets/media/serenemama-1.png" class="img-responsive"/>
+                            </a>
+                            <a href="assets/media/serenemama-2.png" data-lightbox="projects" title="My caption"></a>
+                            <a href="assets/media/serenemama-3.png" data-lightbox="projects" title="My caption"></a>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="http://www.serenemama.com">Serene Mama <i class="fa fa-arrow-circle-o-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="assets/media/serenemama-1.png" data-lightbox="projects" title="SereneMama.com Birth Doulas">
-                                    <img src="assets/media/serenemama-1.png" class="img-responsive"/>
-                                </a>
-                                <a href="assets/media/serenemama-2.png" data-lightbox="projects" title="My caption"></a>
-                                <a href="assets/media/serenemama-3.png" data-lightbox="projects" title="My caption"></a>
-                            </div>
-                            <div class="panel-footer">
-                                <a href="http://www.serenemama.com">Serene Mama <i class="fa fa-arrow-circle-o-right"></i></a>
-                            </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <a href="assets/media/geotracmap-1.png" data-lightbox="projects" title="GEOTrac International Oil &amp; Gas Map 3.0">
+                                <img src="assets/media/geotracmap-1.png" class="img-responsive"/>
+                            </a>
+                            <a href="assets/media/geotracmap-2.png" data-lightbox="projects" title="GEOTrac International Oil &amp; Gas Map 3.0"></a>
+                        </div>
+                        <div class="panel-footer">
+                            GEOTrac International, Oil &amp; Gas Map 3.0
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="assets/media/geotracmap-1.png" data-lightbox="projects" title="GEOTrac International Oil &amp; Gas Map 3.0">
-                                    <img src="assets/media/geotracmap-1.png" class="img-responsive"/>
-                                </a>
-                                <a href="assets/media/geotracmap-2.png" data-lightbox="projects" title="GEOTrac International Oil &amp; Gas Map 3.0"></a>
-                            </div>
-                            <div class="panel-footer">
-                                GEOTrac International, Oil &amp; Gas Map 3.0
-                            </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <a href="assets/media/nflpicks-1.png" data-lightbox="projects" title="Kris's NFL Picks">
+                                <img src="assets/media/nflpicks-1.png" class="img-responsive"/>
+                            </a>
+                            <a href="assets/media/nflpicks-2.png" data-lightbox="projects" title="Kris's NFL Picks"></a>
                         </div>
+                       <div class="panel-footer">
+                            Kris's NFL Picks
+                            <span class="text-danger pull-right">project cancelled</span>
+                       </div>
                     </div>
+                </div>
+            </div> <!-- end .row -->
 
-                    <div class="col-md-4">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="assets/media/nflpicks-1.png" data-lightbox="projects" title="Kris's NFL Picks">
-                                    <img src="assets/media/nflpicks-1.png" class="img-responsive"/>
-                                </a>
-                                <a href="assets/media/nflpicks-2.png" data-lightbox="projects" title="Kris's NFL Picks"></a>
-                            </div>
-                           <div class="panel-footer">
-                                Kris's NFL Picks
-                                <span class="text-danger pull-right">project cancelled</span>
-                           </div>
-                        </div>
-                    </div>
-                </div> <!-- end .row -->
-
-            </div> <!-- end .container -->
-        </section> <!-- end section#projects -->
+        </div> <!-- end .container -->    
 
         <footer>
             <div class="container">
@@ -182,7 +176,7 @@
                     </div>
                     <div class="col-xs-6">
                         <p class="text-right">
-                            <a class="icon-ghost" href="http://ghost.org"> Ghost</a>
+                            <a href="http://ghost.org"><i class="icon-ghost"></i> Ghost</a>
                         </p>
                     </div>
                 </div>
