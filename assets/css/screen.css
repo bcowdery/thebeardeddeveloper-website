@@ -288,11 +288,38 @@ footer .poweredby {
     body {
         background-image: url('../img/background-tablet.jpg');
     }
+    .device-icons {
+        font-size: 8em;
+        text-align: left;
+    }
 }
 
 /* Phones */
 @media (max-width: 767px) {
     body {
         background-image: url('../img/background-phone.jpg');
+    }
+    header .blog-title {
+        height: auto;
+    }
+    header .blog-description img {
+        height: 0;
+        display: none;
+    }
+    .device-icons {
+        font-size: 8em;
+        text-align: left;
+    }
+    .ribbon {
+        width: auto;
+    }
+    .ribbon h1 {
+        font-size: 36px;
+    }
+    .ribbon:before, .ribbon:after {
+        display: none;
+    }
+    .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+        display:none;
     }
 }
