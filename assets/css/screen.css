@@ -215,6 +215,7 @@ header .blog-description .lead {
 
 .tag-list {
     margin-top: 40px;
+    padding-left: 0;
     list-style: none;
 }
 .tag-list li {
