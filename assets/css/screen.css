@@ -53,27 +53,17 @@ body {
     background-attachment: fixed;
 }
 
-header {
-    width: 100%;
-    height: 500px;
-    position: relative;
-}
 header .inner {
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 header .blog-title {
-    height: 100px;
-    text-align: center;
-}
-header .blog-logo {
-    padding-top: 50px;
+    height: 100px;    
+    margin-bottom: 40px;
 }
 header .blog-description {
-    width: 100%;
-    position: absolute;
-    bottom: 15px;
     color: #fff;
+    text-align: center;
 }
 header .blog-description .lead {
     font-family: 'Reenie Beanie', cursive;
@@ -86,10 +76,9 @@ header .social-links {
 }
 
 .main {
+    margin-bottom: 50px;
+    padding-top: 50px;    
     background: transparent url('../img/gray_jean.png') top left repeat;
-}
-.container {
-    padding-top: 50px;
 }
 
 footer {
@@ -121,7 +110,7 @@ h1, h2, h3, h4, h5 {
 .main .fa {
     color: #68237F;
 }
-.fa.fa-10x {
+.fa-10x {
     font-size: 10em;    
 }
 
@@ -148,6 +137,7 @@ a.btn-outline:hover {
     color: #68237F;
     background-color: #fff;
 }
+
 .tag-list {
     margin-top: 40px;
     list-style: none;    
