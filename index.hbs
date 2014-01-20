@@ -21,29 +21,32 @@
     {{#foreach posts}}
 
         <article class="{{post_class}}">
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
-
-            <section class="post-content">
-                <p>{{excerpt}}&hellip;</p>
-            </section>
-        </article> <!-- end article -->
-
-        <div class="post-footer">
             <div class="row">
                 <div class="col-md-12">
-                    <section class="tags">
-                        <ul class="tag-list">
-                            <li><i class="fa fa-tags"></i></li>
-                            {{#tags}}
-                            <li>{{name}}</li>
-                            {{/tags}}
-                        </ul>
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+
+                    <section class="post-content">
+                        <p>{{excerpt}}&hellip;</p>
                     </section>
                 </div>
-            </div> <!-- end .row -->
-        </div> <!-- end .post-footer -->
+            </div>
 
+            <div class="post-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="tags">
+                            <ul class="tag-list">
+                                <li><i class="fa fa-tags"></i></li>
+                                {{#tags}}
+                                <li>{{name}}</li>
+                                {{/tags}}
+                            </ul>
+                        </section>
+                    </div>
+                </div> <!-- end .row -->
+            </div> <!-- end .post-footer -->
+        </article> <!-- end article -->
     {{/foreach}}
 
     {{pagination}}
