@@ -1,9 +1,17 @@
 /*
     The Bearded Developer co.
     @author Brian Cowdery
+
+
+    Color palette:
+
+    red             #c84a28;
+    purple          #8106A9
+    deep purple     #68237F
+    light purple    #D861C9
 */
 
-/* Ghost Icons
+/* Ghost Icon
  -------------- */
 
 @font-face {
@@ -45,6 +53,7 @@ html, body {
 }
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     color: #444;
     background-image: url('../img/background.jpg');
     background-size: cover;
@@ -67,14 +76,59 @@ header .social-links {
     left: 5px;
 }
 
+.push {
+    margin-top: 40px;
+}
 .main {
-    margin-bottom: 50px;
     padding-top: 50px;
     background: transparent url('../img/gray_jean.png') top left repeat;
 }
+.projects {
+    margin: 40px 0;
+}
+
+article {
+    padding-bottom: 100px;
+}
+
+.post-title {
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+.post-date {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 2em;
+    color: #000;
+}
+.post-content {
+    font-size: 1.5em;
+}
+.post-footer{
+    margin-top: 40px;
+}
+.author h4 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2.5em;
+    color: #444;
+    text-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+}
+.share {
+    margin-top: 50px;
+    text-align: right;
+    font-size: 2em;
+}
+
+pre {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+pre code {
+    border-radius: 4px;
+}
 
 footer {
-    margin-top: 40px;
     background: #202020;
     border-top: 1px solid #3a3a3a;
     box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
@@ -212,9 +266,11 @@ header .blog-description .lead {
     color: #fff;
     text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
 }
-
+.tags {
+    color: #a2a2a2;
+}
 .tag-list {
-    margin-top: 40px;
+    margin-top: 0;
     padding-left: 0;
     list-style: none;
 }
@@ -225,9 +281,8 @@ header .blog-description .lead {
     font-weight: 300;
     line-height: 1em;
     text-transform: uppercase;
-    color: #a2a2a2;
 }
-.tag-list:after {
+.fade-out:after {
     content: "";
     position: absolute;
     bottom: 5px;

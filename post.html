@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The Bearded Developer Co.</title>
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/lightbox.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/styles/tomorrow-night.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Reenie+Beanie|Amatic+SC:400,700">
+    </head>
+
+    <body class="post">
+        <header role="banner">
+            <div class="social-links">
+                <a href="http://github.com/bcowdery/"><i class="fa fa-github fa-2x"></i></a>
+                <a href="http://ca.linkedin.com/in/briancowdery/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </div>
+
+            <div class="inner">
+                <div class="blog-title">
+                    <div class="ribbon">
+                        <div class="ribbon-content"><h1>The Bearded Developer <small>co</small></h1></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article class="main {{post_class}}">
+            <div class="container">
+
+            <!-- {{#post}} -->
+
+                <h1 class="post-title">
+                    Change App.config Settings at Runtime
+                </h1>
+                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">15 Oct 2013</time>
+
+                <section class="post-content">
+                    <p> i now issue a new commandment: thou shalt do the dance. mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. i did the same thing to gandhi, he didn't eat for three weeks. boxing is about respect. getting it for yourself, and taking it away from the other guy. the man likes to play chess; let's get him some rocks. bruce... i'm god. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all. that tall drink of water with the silver spoon up his ass. i once heard a wise man say there are no perfect men. only perfect intentions. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all. ,</p>
+                    <p> well, what is it today? more spelunking? cities fall but they are rebuilt. heroes die but they are remembered. i don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i once heard a wise man say there are no perfect men. only perfect intentions. bruce... i'm god. i now issue a new commandment: thou shalt do the dance. that tall drink of water with the silver spoon up his ass. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all. rehabilitated? well, now let me see. you know, i don't have any idea what that means. it only took me six days. same time it took the lord to make the world. rehabilitated? well, now let me see. you know, i don't have any idea what that means. mister wayne, if you don't want to <code>$(document)</code> tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. ,</p>
+
+                    <pre>
+                        <code class="java">
+import org.testng.annotations.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+@Test
+public class HamcrestTest {
+
+    @Test
+    public void equality {
+        String value = "abc";
+
+        assertThat(value, equalTo("abc"));
+        assertThat(value, is("abc"));
+    }
+}
+                        </code>
+                    </pre>
+
+                    <p> cities fall but they are rebuilt. heroes die but they are remembered. i once heard a wise man say there are no perfect men. only perfect intentions. let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. the man likes to play chess; let's get him some rocks. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. you measure yourself by the people who measure themselves by you. boxing is about respect. getting it for yourself, and taking it away from the other guy. bruce... i'm god. it only took me six days. same time it took the lord to make the world. the man likes to play chess; let's get him some rocks. ,</p>
+                    <p> boxing is about respect. getting it for yourself, and taking it away from the other guy. i did the same thing to gandhi, he didn't eat for three weeks. cities fall but they are rebuilt. heroes die but they are remembered. it only took me six days. same time it took the lord to make the world. cities fall but they are rebuilt. heroes die but they are remembered. cities fall but they are rebuilt. heroes die but they are remembered. that tall drink of water with the silver spoon up his ass. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. i don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. well, what is it today? more spelunking? mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked, i don't have to lie. but don't think of me as an idiot. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. </p>
+                </section>
+
+                <div class="post-footer">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- {{#if author}} -->
+                                <section class="author">
+                                    <h4>Brian</h4>
+                                </section>
+                            <!-- {{/if}} -->
+                            <section class="tags">
+                                <ul class="tag-list">
+                                    <li><i class="fa fa-tags"></i></li>
+                                    <li>Java</li>
+                                    <li>Hibernate</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="share">
+                                <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+                                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                                    <i class="fa fa-twitter-square"></i>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                                    <i class="fa fa-google-plus-square"></i>
+                                </a>
+                            </section>
+                        </div>
+                    </div> <!-- end .row -->
+                </div> <!-- end .post-fooder -->
+
+            <!-- {{/post}} -->
+
+            </div> <!-- end .container -->
+        </article> <!-- end .main -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <p>
+                            &copy; 2013 Brian Cowdery, The Bearded Developer <sup>co.</sup>
+                        </p>
+                    </div>
+                    <div class="col-xs-4">
+                        <p class="poweredby">
+                            <a href="http://ghost.org"><i class="icon-ghost"></i> Ghost</a>
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end .container -->
+        </footer> <!-- end #footer -->
+
+        <!-- javascript -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="assets/js/lightbox-2.6.min.js"></script>
+        <script src="assets/js/highlight-8.0.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
