@@ -35,14 +35,16 @@
             <div class="post-footer">
                 <div class="row">
                     <div class="col-md-12">
+                        {{#if tags}}
                         <section class="tags">
                             <ul class="tag-list">
                                 <li><i class="fa fa-tags"></i></li>
-                                {{#tags}}
+                                {{#foreach tags}}
                                 <li>{{name}}</li>
-                                {{/tags}}
-                            </ul>
+                                {{/foreach}}
+                            </ul>                    
                         </section>
+                        {{#/if}}
                     </div>
                 </div> <!-- end .row -->
             </div> <!-- end .post-footer -->
