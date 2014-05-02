@@ -93,16 +93,13 @@ article {
 
 .post-title {
     margin-bottom: 20px;
-    font-size: 4em;
 }
 .post-date {
     margin-bottom: 20px;
     display: block;
-    font-size: 2em;
     color: #000;
 }
-.post-content {
-    font-size: 1.5em;
+.post-content {    
 }
 .post-footer{
     margin-top: 40px;
