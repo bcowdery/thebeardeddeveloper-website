@@ -30,20 +30,22 @@
                         <p>{{excerpt}}&hellip;</p>
                     </section>
                 </div>
-            </div>
+            </div> <!-- end .row -->
 
             <div class="post-footer">
                 <div class="row">
+                    {{#if tags}}
                     <div class="col-md-12">
                         <section class="tags">
                             <ul class="tag-list">
                                 <li><i class="fa fa-tags"></i></li>
-                                {{#tags}}
+                                {{#foreach tags}}
                                 <li>{{name}}</li>
-                                {{/tags}}
+                                {{/foreach}}
                             </ul>
                         </section>
                     </div>
+                    {{/if}}
                 </div> <!-- end .row -->
             </div> <!-- end .post-footer -->
         </article> <!-- end article -->
